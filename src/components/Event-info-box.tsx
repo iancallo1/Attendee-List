@@ -13,13 +13,13 @@ interface EventInfoBoxProps {
 
 const EventInfoBox: React.FC<EventInfoBoxProps> = ({ totalVisitors, eventName, location, date, time }) => {
   return (
-    <div className="p-4 bg-amber-400 text-white rounded-md mb-4">
+    <div className="p-4 bg-gray-900 text-white rounded-md mb-4">
       <h2 className="text-xl font-bold">{eventName}</h2>
       <p className="mt-2">{location}</p>
       <p>{date}</p>
       <p>{time}</p>
       <p className="mt-4 font-bold">Total Visitor: {totalVisitors}</p>
-      <Button variant="outline" size="sm" className="mt-4">
+      <Button variant="outline" size="sm" className="mt-4 bg-amber-400 text-black hover:bg-amber-500">
         <span role="img" aria-label="QR Code">📷</span> Scan me!
       </Button>
     </div>

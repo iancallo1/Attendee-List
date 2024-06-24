@@ -71,7 +71,7 @@ export function Attendee_Table({ attendees }: AttendeeTableProps) {
     getPaginationRowModel: getPaginationRowModel(),
     initialState: {
       pagination: {
-        pageSize: 10, // Adjust the page size if needed
+        pageSize: 8, // Adjust the page size if needed
       },
     },
   })

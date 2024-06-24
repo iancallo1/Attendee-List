@@ -5,25 +5,12 @@
 import { useState } from 'react';
 import { Attendee_Table } from "../components/attendee-table"; 
 import EventInfoBox from "../components/Event-info-box"; 
+import { attendees, eventInfo as defaultEventInfo } from "./eventData"
 
-//Table Attendees API HERE
-const attendees = [
-  {
-    name: "John Doe",
-    dateTime: "2024-06-22 10:00 AM",
-    table: "Table 1",
-    status: "Checked In",
-  },
-];
 
 export default function Home() {
   // Event Data API Here
-  const [eventInfo, setEventInfo] = useState({
-    eventName: "Mr. & Mrs. Malik Wedding 2026",
-    location: "Luxe Hotel Lapasan, Cagayan De Oro",
-    date: "August 23, 2026",
-    time: "9:00 AM - 3:00 PM",
-  });
+  const [eventInfo, setEventInfo] = useState(defaultEventInfo);
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
