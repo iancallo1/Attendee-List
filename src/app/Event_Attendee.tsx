@@ -6,9 +6,7 @@ import { useState } from 'react';
 import { Attendee_Table } from "../components/attendee-table"; 
 import EventInfoBox from "../components/Event-info-box"; 
 import { attendees, eventInfo as defaultEventInfo } from "./eventData"
-import Footer from './footer';
-import Background from './background';
-import EventButton from '@/components/localComponent/EventButton';
+
 
 export function Event_Attendee() {
   const [eventInfo, setEventInfo] = useState(defaultEventInfo);

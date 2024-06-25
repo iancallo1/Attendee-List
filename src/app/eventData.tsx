@@ -89,6 +89,126 @@ export const attendees = [
     table: "Table 5",
     status: "Checked In",
   },
+        {
+    name: "Jill Valentine",
+    dateTime: "2024-06-22 11:00 AM",
+    table: "Table 5",
+    status: "Checked In",
+  },
+
+      {
+    name: "Jill Valentine",
+    dateTime: "2024-06-22 11:00 AM",
+    table: "Table 5",
+    status: "Checked In",
+  },
+        {
+    name: "Jill Valentine",
+    dateTime: "2024-06-22 11:00 AM",
+    table: "Table 5",
+    status: "Checked In",
+  },
+
+      {
+    name: "Jill Valentine",
+    dateTime: "2024-06-22 11:00 AM",
+    table: "Table 5",
+    status: "Checked In",
+  },
+        {
+    name: "Jill Valentine",
+    dateTime: "2024-06-22 11:00 AM",
+    table: "Table 5",
+    status: "Checked In",
+  },
+
+      {
+    name: "Jill Valentine",
+    dateTime: "2024-06-22 11:00 AM",
+    table: "Table 5",
+    status: "Checked In",
+  },
+          {
+    name: "Jill Valentine",
+    dateTime: "2024-06-22 11:00 AM",
+    table: "Table 5",
+    status: "Checked In",
+  },
+
+      {
+    name: "Jill Valentine",
+    dateTime: "2024-06-22 11:00 AM",
+    table: "Table 5",
+    status: "Checked In",
+  },
+        {
+    name: "Jill Valentine",
+    dateTime: "2024-06-22 11:00 AM",
+    table: "Table 5",
+    status: "Checked In",
+  },
+
+      {
+    name: "Jill Valentine",
+    dateTime: "2024-06-22 11:00 AM",
+    table: "Table 5",
+    status: "Checked In",
+  },
+
+          {
+    name: "Jill Valentine",
+    dateTime: "2024-06-22 11:00 AM",
+    table: "Table 5",
+    status: "Checked In",
+  },
+
+      {
+    name: "Jill Valentine",
+    dateTime: "2024-06-22 11:00 AM",
+    table: "Table 5",
+    status: "Checked In",
+  },
+        {
+    name: "Jill Valentine",
+    dateTime: "2024-06-22 11:00 AM",
+    table: "Table 5",
+    status: "Checked In",
+  },
+
+      {
+    name: "Jill Valentine",
+    dateTime: "2024-06-22 11:00 AM",
+    table: "Table 5",
+    status: "Checked In",
+  },
+
+          {
+    name: "Jill Valentine",
+    dateTime: "2024-06-22 11:00 AM",
+    table: "Table 5",
+    status: "Checked In",
+  },
+
+      {
+    name: "Jill Valentine",
+    dateTime: "2024-06-22 11:00 AM",
+    table: "Table 5",
+    status: "Checked In",
+  },
+        {
+    name: "Jill Valentine",
+    dateTime: "2024-06-22 11:00 AM",
+    table: "Table 5",
+    status: "Checked In",
+  },
+
+      {
+    name: "Jill Valentine",
+    dateTime: "2024-06-22 11:00 AM",
+    table: "Table 5",
+    status: "Checked In",
+  },
+
 
 
   // I don't know how to do this

@@ -13,7 +13,7 @@ interface EventInfoBoxProps {
 
 const EventInfoBox: React.FC<EventInfoBoxProps> = ({ totalVisitors, eventName, location, date, time }) => {
   return (
-    <div className="p-4 bg-black text-white rounded-md mb-4">
+    <div className="p-4 bg-red-900 text-white rounded-md mb-4">
       <h2 className="text-xl font-bold">{eventName}</h2>
       <p className="mt-2">{location}</p>
       <p>{date}</p>

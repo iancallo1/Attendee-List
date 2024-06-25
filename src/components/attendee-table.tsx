@@ -1,16 +1,9 @@
-"use client"; //< ----- what sorcery is this
+"use client"; // Ensure this directive is at the top of the file
 
 import React, { useMemo } from 'react';
-import {
-  Table,
-  TableBody,
-  TableCaption,
-  TableCell,
-  TableFooter,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
+import {Table, TableBody, TableCaption, TableCell, TableFooter, TableHead, TableHeader,TableRow,} from "@/components/ui/table";
+import { ScrollArea } from "@/components/ui/scroll-area"; 
+import { Separator } from "@/components/ui/separator";
 
 import {
   ColumnDef,
@@ -75,9 +68,9 @@ export function Attendee_Table({ attendees }: AttendeeTableProps) {
   });
 
   return (
-    <div className="rounded-md border overflow-hidden">
+    <div className="rounded-md border overflow-hidden bg-white">
       <div className="table-container">
-        <Table style={{ tableLayout: 'fixed', width: '100%' }}>
+        <Table style={{ tableLayout: 'fixed', width: '100%', backgroundColor: 'white-100' }}>
           <TableCaption>A list of Attendees.</TableCaption>
           <TableHeader className="table-header-group">
             {table.getHeaderGroups().map(headerGroup => (
@@ -103,14 +96,15 @@ export function Attendee_Table({ attendees }: AttendeeTableProps) {
           </TableBody>
           <TableFooter>
             <TableRow>
-              <TableCell colSpan={3}>Total Attendees</TableCell>
-              <TableCell className="text-right">{attendees.length}</TableCell>
+              <TableCell className="bg-white" colSpan={3}>Total Attendees</TableCell>
+              <TableCell className="flex flex-1 justify-start">{attendees.length}</TableCell>
             </TableRow>
           </TableFooter>
         </Table>
       </div>
       <div className="flex items-center justify-end space-x-2 py-4">
         <Button
+          className='bg-white hover:bg-amber-400'
           variant="outline"
           size="sm"
           onClick={() => table.previousPage()}
@@ -119,6 +113,7 @@ export function Attendee_Table({ attendees }: AttendeeTableProps) {
           Previous
         </Button>
         <Button
+          className='bg-white hover:bg-amber-400'
           variant="outline"
           size="sm"
           onClick={() => table.nextPage()}
@@ -127,6 +122,8 @@ export function Attendee_Table({ attendees }: AttendeeTableProps) {
           Next
         </Button>
       </div>
+      {/* Include the ScrollAreaDemo component here */}
+      <ScrollArea />
     </div>
-  )
+  );
 }

@@ -2,15 +2,12 @@
 
 "use client"; //< ----- what sorcery is this
 
-import { useState } from 'react';
-import { Attendee_Table } from "../components/attendee-table"; 
-import EventInfoBox from "../components/Event-info-box"; 
-import { attendees, eventInfo as defaultEventInfo } from "./eventData"
+
 import Footer from './footer';
-import Background from './background';
-import EventButton from '@/components/localComponent/EventButton';
 import Navbar from './Navbar';
 import { Event_Attendee } from './Event_Attendee';
+import Background from './background';
+import EventButton from '@/components/localComponent/EventButton';
 
 
 export default function Home() {
@@ -20,9 +17,9 @@ export default function Home() {
       
         <Navbar />
 
-        <div className="flex-col justify-start items center px-[30vh] py-[30vh]">
+        <div className="flex-col justify-start items center px-[3vh] py-[3vh]">
 
-          
+         
          
         </div>
         <div>
