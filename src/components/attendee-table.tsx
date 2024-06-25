@@ -5,13 +5,7 @@ import {Table, TableBody, TableCaption, TableCell, TableFooter, TableHead, Table
 import { ScrollArea } from "@/components/ui/scroll-area"; 
 import { Separator } from "@/components/ui/separator";
 
-import {
-  ColumnDef,
-  flexRender,
-  getCoreRowModel,
-  getPaginationRowModel,
-  useReactTable,
-} from "@tanstack/react-table";
+import {ColumnDef, flexRender, getCoreRowModel, getPaginationRowModel, useReactTable,} from "@tanstack/react-table";
 import { Button } from "@/components/ui/button";
 
 interface Attendee {

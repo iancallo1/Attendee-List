@@ -19,7 +19,7 @@ const EventInfoBox: React.FC<EventInfoBoxProps> = ({ totalVisitors, eventName, l
       <p>{date}</p>
       <p>{time}</p>
       <p className="mt-4 font-bold">Total Visitor: {totalVisitors}</p>
-      <Button variant="outline" size="sm" className="mt-4 bg-amber-400 text-black hover:bg-amber-500">
+      <Button variant="outline" size="sm" className="mt-4  bg-amber-400 text-black hover:bg-white">
         <span role="img" aria-label="QR Code">📷</span> Scan me!
       </Button>
     </div>

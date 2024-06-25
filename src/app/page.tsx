@@ -17,7 +17,7 @@ export default function Home() {
       
         <Navbar />
 
-        <div className="flex-col justify-start items center px-[3vh] py-[3vh]">
+        <div className="flex-col justify-start items center px-[2vh] py-[2vh]">
 
          
          

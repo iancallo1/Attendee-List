@@ -1,4 +1,4 @@
-// Attendee.tsx
+// Event_Attendee.tsx
 
 "use client";
 
