@@ -6,28 +6,31 @@ import { useState } from 'react';
 import { Attendee_Table } from "../components/attendee-table"; 
 import EventInfoBox from "../components/Event-info-box"; 
 import { attendees, eventInfo as defaultEventInfo } from "./eventData"
+import Footer from './footer';
+import Background from './background';
+import EventButton from '@/components/localComponent/EventButton';
+import Navbar from './Navbar';
+import { Event_Attendee } from './Event_Attendee';
 
 
 export default function Home() {
-  // Event Data API Here
-  const [eventInfo, setEventInfo] = useState(defaultEventInfo);
-
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      {/* Event Info Box component render here */}
-      <div className="w-full max-w-5xl">
-        <EventInfoBox 
-          totalVisitors={attendees.length} 
-          eventName={eventInfo.eventName}
-          location={eventInfo.location}
-          date={eventInfo.date}
-          time={eventInfo.time}
-        />
-      </div>
+    <main className="bg-party max-h-full max-w-full bg-no-repeat bg-cover justify-center relative ">
+      <div>
+      
+        <Navbar />
 
-      {/* The Table component render here */}
-      <div className="w-full max-w-5xl mt-8">
-        <Attendee_Table attendees={attendees} />
+        <div className="flex-col justify-start items center px-[30vh] py-[30vh]">
+
+          
+         
+        </div>
+        <div>
+          <Event_Attendee />
+        </div>
+        <div>
+          <Footer></Footer>
+        </div>
       </div>
     </main>
   );
