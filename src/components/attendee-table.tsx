@@ -1,5 +1,3 @@
-//attendee-table
-
 "use client"; //< ----- what sorcery is this
 
 import React, { useMemo } from 'react';
@@ -12,7 +10,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table"
+} from "@/components/ui/table";
 
 import {
   ColumnDef,
@@ -20,8 +18,8 @@ import {
   getCoreRowModel,
   getPaginationRowModel,
   useReactTable,
-} from "@tanstack/react-table"
-import { Button } from "@/components/ui/button"
+} from "@tanstack/react-table";
+import { Button } from "@/components/ui/button";
 
 interface Attendee {
   name: string;
@@ -62,7 +60,7 @@ export function Attendee_Table({ attendees }: AttendeeTableProps) {
       },
     ],
     []
-  )
+  );
 
   const table = useReactTable({
     data: attendees,
@@ -71,17 +69,17 @@ export function Attendee_Table({ attendees }: AttendeeTableProps) {
     getPaginationRowModel: getPaginationRowModel(),
     initialState: {
       pagination: {
-        pageSize: 8, // Adjust the page size if needed
+        pageSize: 10, // Adjust the page size if needed
       },
     },
-  })
+  });
 
   return (
-    <div>
-      <div className="rounded-md border">
-        <Table>
+    <div className="rounded-md border overflow-hidden">
+      <div className="table-container">
+        <Table style={{ tableLayout: 'fixed', width: '100%' }}>
           <TableCaption>A list of Attendees.</TableCaption>
-          <TableHeader>
+          <TableHeader className="table-header-group">
             {table.getHeaderGroups().map(headerGroup => (
               <TableRow key={headerGroup.id}>
                 {headerGroup.headers.map(header => (
@@ -92,7 +90,7 @@ export function Attendee_Table({ attendees }: AttendeeTableProps) {
               </TableRow>
             ))}
           </TableHeader>
-          <TableBody>
+          <TableBody className="table-body max-h-96 overflow-y-auto">
             {table.getRowModel().rows.map(row => (
               <TableRow key={row.id}>
                 {row.getVisibleCells().map(cell => (

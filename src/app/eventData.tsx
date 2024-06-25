@@ -91,5 +91,5 @@ export const attendees = [
   },
 
 
-  // I dont know how to do this
+  // I don't know how to do this
 ];
